@@ -1,0 +1,5 @@
+Create a pokeDex to show a list of pokemons.
+
+Use this api to fetch data - https://pokeapi.co/api/v2/pokemon/?limit=100&offset=0
+
+Use this api to fetch image for each poke character - https://img.pokemondb.net/artwork/large/venusaur.jpg (replace venusaur with the name coming for each poke character from the results for the above api call.)

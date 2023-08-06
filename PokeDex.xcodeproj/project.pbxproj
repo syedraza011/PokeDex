@@ -14,6 +14,11 @@
 		E981E5CB2A80271A00A4770A /* PokeDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5CA2A80271A00A4770A /* PokeDexTests.swift */; };
 		E981E5D52A80271A00A4770A /* PokeDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5D42A80271A00A4770A /* PokeDexUITests.swift */; };
 		E981E5D72A80271A00A4770A /* PokeDexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5D62A80271A00A4770A /* PokeDexUITestsLaunchTests.swift */; };
+		E981E5E52A80272F00A4770A /* PokeDex_Challenge in Resources */ = {isa = PBXBuildFile; fileRef = E981E5E32A80272F00A4770A /* PokeDex_Challenge */; };
+		E981E5E62A80272F00A4770A /* ExpectedView.png in Resources */ = {isa = PBXBuildFile; fileRef = E981E5E42A80272F00A4770A /* ExpectedView.png */; };
+		E981E5EB2A80281E00A4770A /* PokeDexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5EA2A80281E00A4770A /* PokeDexResponse.swift */; };
+		E981E5ED2A80283200A4770A /* PokeDexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5EC2A80283200A4770A /* PokeDexViewModel.swift */; };
+		E981E5EF2A80284400A4770A /* PokeDexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5EE2A80284400A4770A /* PokeDexService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		E981E5D02A80271A00A4770A /* PokeDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E981E5D42A80271A00A4770A /* PokeDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexUITests.swift; sourceTree = "<group>"; };
 		E981E5D62A80271A00A4770A /* PokeDexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E981E5E32A80272F00A4770A /* PokeDex_Challenge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PokeDex_Challenge; sourceTree = "<group>"; };
+		E981E5E42A80272F00A4770A /* ExpectedView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExpectedView.png; sourceTree = "<group>"; };
+		E981E5EA2A80281E00A4770A /* PokeDexResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexResponse.swift; sourceTree = "<group>"; };
+		E981E5EC2A80283200A4770A /* PokeDexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexViewModel.swift; sourceTree = "<group>"; };
+		E981E5EE2A80284400A4770A /* PokeDexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				E981E5B92A80271900A4770A /* PokeDexApp.swift */,
-				E981E5BB2A80271900A4770A /* ContentView.swift */,
+				E981E5E42A80272F00A4770A /* ExpectedView.png */,
+				E981E5E32A80272F00A4770A /* PokeDex_Challenge */,
+				E981E5E92A8027B800A4770A /* Model */,
+				E981E5E82A8027AB00A4770A /* Network */,
+				E981E5E72A80279C00A4770A /* Views */,
 				E981E5BD2A80271A00A4770A /* Assets.xcassets */,
 				E981E5BF2A80271A00A4770A /* Preview Content */,
 			);
@@ -125,6 +139,31 @@
 				E981E5D62A80271A00A4770A /* PokeDexUITestsLaunchTests.swift */,
 			);
 			path = PokeDexUITests;
+			sourceTree = "<group>";
+		};
+		E981E5E72A80279C00A4770A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E981E5BB2A80271900A4770A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E981E5E82A8027AB00A4770A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E981E5EE2A80284400A4770A /* PokeDexService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E981E5E92A8027B800A4770A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E981E5EA2A80281E00A4770A /* PokeDexResponse.swift */,
+				E981E5EC2A80283200A4770A /* PokeDexViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +270,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E981E5E62A80272F00A4770A /* ExpectedView.png in Resources */,
 				E981E5C12A80271A00A4770A /* Preview Assets.xcassets in Resources */,
 				E981E5BE2A80271A00A4770A /* Assets.xcassets in Resources */,
+				E981E5E52A80272F00A4770A /* PokeDex_Challenge in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E981E5BC2A80271900A4770A /* ContentView.swift in Sources */,
+				E981E5ED2A80283200A4770A /* PokeDexViewModel.swift in Sources */,
+				E981E5EF2A80284400A4770A /* PokeDexService.swift in Sources */,
 				E981E5BA2A80271900A4770A /* PokeDexApp.swift in Sources */,
+				E981E5EB2A80281E00A4770A /* PokeDexResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
