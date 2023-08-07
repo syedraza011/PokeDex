@@ -13,8 +13,9 @@ struct PokeDexReponse: Decodable {
     let results: [PokeDexes]
 }
 struct PokeDexes: Decodable, Identifiable{
-   let id = UUID()
+    let id = UUID()
     let name:String
+    let url : String
   
 }
 
