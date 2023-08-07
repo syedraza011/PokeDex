@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = PokeDexViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                ForEach(viewModel.allPokeDex) { singlePoke in
+                    Text(singlePoke.name)
+                }
+            }
+            .onAppear() {
+                viewModel.getPokeDex()
+            }
         }
         .padding()
     }

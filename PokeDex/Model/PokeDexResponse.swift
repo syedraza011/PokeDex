@@ -6,8 +6,15 @@
 //
 
 import Foundation
+
+
 struct PokeDexReponse: Decodable {
-    let id : Int
-    let name: String
-    let url: URL
+    
+    let results: [PokeDexes]
 }
+struct PokeDexes: Decodable, Identifiable{
+   let id = UUID()
+    let name:String
+  
+}
+

@@ -7,20 +7,26 @@
 
 import Foundation
 class PokeDexViewModel: ObservableObject {
-    @Published var allPokeDex = PokeDexReponse()
+    @Published var allPokeDex :[PokeDexes] = []
+    
     let service: PokeDexServiceProtocol
     
-    init(service: pokeDexServiceProtocol = PokeDexService()){
+    init(service: PokeDexServiceProtocol = PokeDexService()){
         self.service = service
     }
-    @MainActor getPokeDex() {
-        Task{
-            do{
-                allPokeDex = try await service.fetchPokeDex()
-            }catch {
-                print(error)
+
+        @MainActor func getPokeDex() {
+            Task{
+                do{
+                   let result = try await service.fetchPokeDex()
+                    allPokeDex = result.results
+                    
+                 
+                   
+                }catch {
+                    print(error)
+                }
             }
         }
     }
     
-}
