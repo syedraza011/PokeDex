@@ -20,9 +20,10 @@ struct ContentView: View {
                                 
                                 PokeImage(singlePoke.name)
                                     .bold()
-                                VStack{
-                                    Text(singlePoke.name)
-                               
+                                VStack(alignment: .leading){
+                                   
+                                    Text(singlePoke.name.capitalized)
+                                    Text("#")
                             
                                     HStack{
                                         Text("see")
@@ -31,9 +32,9 @@ struct ContentView: View {
                                         }
                                     }
                                     
-                                }
+                                }.padding(20)
                             }
-                        }
+                        }.padding(30)
                   
                     }
                 }
@@ -55,7 +56,7 @@ struct ContentView: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100) // Adjust size as needed
+                    .frame(width: 100, height: 100) 
             } placeholder: {
                 ProgressView()
             }
