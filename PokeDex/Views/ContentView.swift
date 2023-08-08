@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 ScrollView (showsIndicators: false){
-                    var i = 0
+                   
                     ForEach(viewModel.allPokeDex, id: \.id) { singlePoke in
                         VStack {
                             HStack{

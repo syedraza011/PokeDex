@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E97C7D7B2A82968F00546798 /* realDataFile.json in Resources */ = {isa = PBXBuildFile; fileRef = E97C7D7A2A82968F00546798 /* realDataFile.json */; };
 		E981E5BA2A80271900A4770A /* PokeDexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5B92A80271900A4770A /* PokeDexApp.swift */; };
 		E981E5BC2A80271900A4770A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981E5BB2A80271900A4770A /* ContentView.swift */; };
 		E981E5BE2A80271A00A4770A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E981E5BD2A80271A00A4770A /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E97C7D7A2A82968F00546798 /* realDataFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = realDataFile.json; sourceTree = "<group>"; };
 		E981E5B62A80271900A4770A /* PokeDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E981E5B92A80271900A4770A /* PokeDexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDexApp.swift; sourceTree = "<group>"; };
 		E981E5BB2A80271900A4770A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		E981E5C92A80271A00A4770A /* PokeDexTests */ = {
 			isa = PBXGroup;
 			children = (
+				E97C7D7A2A82968F00546798 /* realDataFile.json */,
 				E981E5CA2A80271A00A4770A /* PokeDexTests.swift */,
 			);
 			path = PokeDexTests;
@@ -281,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97C7D7B2A82968F00546798 /* realDataFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
