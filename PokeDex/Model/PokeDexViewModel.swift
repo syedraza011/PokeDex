@@ -7,7 +7,7 @@
 
 import Foundation
 class PokeDexViewModel: ObservableObject {
-    @Published var allPokeDex :[PokeDexes] = []
+    @Published var allPokeDex = [PokeDexes]()
     
     let service: PokeDexServiceProtocol
     

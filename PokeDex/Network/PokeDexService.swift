@@ -32,7 +32,7 @@ class PokeDexService: PokeDexServiceProtocol {
     
     let urlString = "https://pokeapi.co/api/v2/pokemon/?limit=100&offset=0"
     
-    func fetchPokeDex() async throws -> PokeDexReponse { // Fixed the typo in the return type
+    func fetchPokeDex() async throws -> PokeDexReponse { 
         guard let url = URL(string: urlString) else {
             throw APIError.invalidUrl
         }
