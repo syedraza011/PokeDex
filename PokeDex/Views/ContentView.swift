@@ -16,6 +16,7 @@ struct ContentView: View {
                         VStack {
                             HStack {
                                 PokeImage(singlePoke.name)
+                                
                                    
                                 VStack(alignment: .leading) {
                                     Text(singlePoke.name.capitalized)
