@@ -107,11 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				E981E5B92A80271900A4770A /* PokeDexApp.swift */,
+				E981E5E72A80279C00A4770A /* Views */,
 				E981E5E42A80272F00A4770A /* ExpectedView.png */,
 				E981E5E32A80272F00A4770A /* PokeDex_Challenge */,
 				E981E5E92A8027B800A4770A /* Model */,
 				E981E5E82A8027AB00A4770A /* Network */,
-				E981E5E72A80279C00A4770A /* Views */,
 				E981E5BD2A80271A00A4770A /* Assets.xcassets */,
 				E981E5BF2A80271A00A4770A /* Preview Content */,
 			);

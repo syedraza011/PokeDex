@@ -21,8 +21,6 @@ class PokeDexViewModel: ObservableObject {
                    let result = try await service.fetchPokeDex()
                     allPokeDex = result.results
                     
-                 
-                   
                 }catch {
                     print(error)
                 }
